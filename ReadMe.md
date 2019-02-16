@@ -1,3 +1,4 @@
+![Python][python]
 # Python
 ## What is Python?
 > Python is scripting langulae which has simple syntax.
@@ -5,4 +6,7 @@
 > IDLE stands for Integrated Development Evnironment.
 ## What is Shell?
 > Shell is a component of IDLE where we can run individual python statements and verify the results.
-[pyhton]: ./images/python.JPG
+
+
+
+[python]: ./images/python-banner.PNG
