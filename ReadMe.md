@@ -9,4 +9,4 @@
 
 
 
-[python]: ./images/python-banner.PNG
+[python]: ./images/python-banner.png
