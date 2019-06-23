@@ -1,12 +1,40 @@
 ![Python][python]
 # Python
-## What is Python?
-> Python is scripting langulae which has simple syntax.
-## What is IDLE?
-> IDLE stands for Integrated Development Evnironment.
-## What is Shell?
-> Shell is a component of IDLE where we can run individual python statements and verify the results.
+> Interpretted language. Enjoyable to write, easy to read and lot clearner
+
+## Zen of Python
+* ### Flat is better than nested
+```Python
+a = 'kannan'
+if a == 'kannan':
+    print('a is kannan')
+else:
+    if a == 'Raksith':
+        print('a is Raksith')
+```
+Following is better than above
+```python
+a = 'kannan'
+if a == 'kannan':
+    print('a is kannan')
+elif a == 'Raksith'::
+    print('a is Raksith')
+```
+
+* ### Explicit is better than implicit
+```python
+ctr = 5
+while ctr != 0:
+    print(ctr)
+    ctr -= 1
+```
+Above is better than following
+```python
+ctr = 5
+while ctr
+    print(ctr)
+    ctr -= 1
+```
 
 
 
-[python]: ./images/python-banner.png
