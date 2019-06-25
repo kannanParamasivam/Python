@@ -1,6 +1,10 @@
 ![Python][python]
 # Python
 > Interpretted language. Enjoyable to write, easy to read and lot clearner
+## PEP (Python Enhancement Proposals)
+>Python is developed by following set of proposals
+* **PEP-8** for Style guide for Python
+* **PEP-20** is called Zen of Python which provided best practices for Python
 
 ## Zen of Python
 * ### Flat is better than nested
@@ -17,7 +21,7 @@ Following is better than above
 a = 'kannan'
 if a == 'kannan':
     print('a is kannan')
-elif a == 'Raksith'::
+elif a == 'Raksith':
     print('a is Raksith')
 ```
 
