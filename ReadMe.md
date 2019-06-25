@@ -1,4 +1,3 @@
-![Python][python]
 # Python
 > Interpretted language. Enjoyable to write, easy to read and lot clearner
 ## PEP (Python Enhancement Proposals)
