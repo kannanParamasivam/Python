@@ -79,3 +79,5 @@ personDetails = {'name': 'Kannan', 'age': 33, 'city': 'Lake Bluff', 'state': 'Il
 personDetails['name']
 'Kannan'
 ```
+## Runtime Arguments
+>Runtime arguments can be accessed through sys.argv collection. sys.argv[0] is the file name of the module so, real runtime arguments will be starting from sys.argv[1]
