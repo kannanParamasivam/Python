@@ -81,3 +81,29 @@ personDetails['name']
 ```
 ## Runtime Arguments
 >Runtime arguments can be accessed through sys.argv collection. sys.argv[0] is the file name of the module so, real runtime arguments will be starting from sys.argv[1]
+
+## Docstrings
+>Method and Module documentation technique which is enclosed in """<<'Content'>>""". For method it should be the first line in body of the method and for moudles it should be the first line in the module
+## Integer
+>Integer is **immutable** **reference** type in python
+## Value and Identity comparison
+> id(object) gives id associated to the reference type. Identity comparison check if both references are refering to the same object where as value comparison checks if value of the object is equal or not
+```python
+la = [1,2,3]
+lb = [1,2,3]
+
+if a is b:
+    print('Identity matches')
+else
+    print('Identity does not matches')
+
+if a == b:
+    print('Value matches')
+else:
+    print('Value does not matches')
+```
+```
+Output:
+Identity does not matches
+value matches
+```
