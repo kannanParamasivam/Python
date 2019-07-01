@@ -1,5 +1,6 @@
 # Python
 > Interpretted language. Enjoyable to write, easy to read and lot clearner
+* Python is Dynamically and Strogly typed programming language
 ## PEP (Python Enhancement Proposals)
 >Python is developed by following set of proposals
 * **PEP-8** for Style guide for Python
@@ -107,3 +108,14 @@ Output:
 Identity does not matches
 value matches
 ```
+## Positional and Keyword arguments
+>All keyword arguments must be mentioned after positional arguments
+## Default values arguments
+* Default valued argument expressions will be evaluated only once
+## Scope
+* Local
+* Enclosing
+* Global
+* Built-in
+>When encountered variables, it would be scanned for decleration in local scope before goin to global scope.
+
