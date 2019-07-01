@@ -1,6 +1,7 @@
 # Python
 > Interpretted language. Enjoyable to write, easy to read and lot clearner
 * Python is Dynamically and Strogly typed programming language
+* Everything is an object in Python
 ## PEP (Python Enhancement Proposals)
 >Python is developed by following set of proposals
 * **PEP-8** for Style guide for Python
@@ -118,4 +119,7 @@ value matches
 * Global
 * Built-in
 >When encountered variables, it would be scanned for decleration in local scope before goin to global scope.
-
+* ```Accessing / modifying global variables from local is not recommended```
+## Explore Type and Attributes of object
+>```type(<object name>)``` shows type of the object
+>```dir(<object name>)``` shows attributes of the object
