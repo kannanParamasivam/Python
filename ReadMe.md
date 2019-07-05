@@ -63,10 +63,13 @@ t = ((1,2),(2,3),(3,4))
 * **Return more than one values** from function as tuple (ref. [tuple.py](./tuple.py))
 * Can **Unpack tuple** into refs variables (ref. [tuple.py](./tuple.py))
 * Can **Unpack nested tuple** into ref variables 
+
 ![](./images/tuples_unpack_nested.JPG)
-Ability of unpacking nested tuples idiomatic python operations like swap in Python
+* Ability of unpacking nested tuples idiomatic python operations like swap in Python
+
 ![](./images/tuple_idiomatic_swap.JPG)
 * tuple can be **created from other collections** using tuple() constructor
+
 ![](./images/tuple_from_other_collections.JPG)
 ### str
 > **Strings** are represented by keyword **`str`** in python
