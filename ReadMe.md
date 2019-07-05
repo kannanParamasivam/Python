@@ -41,7 +41,34 @@ while ctr
     ctr -= 1
 ```
 ## Collections
-## str
+### Tuples
+> **Immutable** collection
+* Enclosed in **parantheses**
+* Can store **any type** of object 
+```python
+t = ("Chicago", 2.3, 3)
+```
+* Can be **nested**
+```python
+t = ((1,2),(2,3),(3,4))
+```
+* Elements can be accessed using **index**
+* Nested tuple elements can be accessed uisng multi dimentional array style
+* **Single element** enclosed in parantheses is parsed as int not tuple. Single element tuple should have comma seperator before closing parantheses
+
+![](./images/tuple_single_element.JPG)
+* **Parentheses are optional**
+
+![](./images/tuple_wo_paren.JPG)
+* **Return more than one values** from function as tuple (ref. [tuple.py](./tuple.py))
+* Can **Unpack tuple** into refs variables (ref. [tuple.py](./tuple.py))
+* Can **Unpack nested tuple** into ref variables 
+![](./images/tuples_unpack_nested.JPG)
+Ability of unpacking nested tuples idiomatic python operations like swap in Python
+![](./images/tuple_idiomatic_swap.JPG)
+* tuple can be **created from other collections** using tuple() constructor
+![](./images/tuple_from_other_collections.JPG)
+### str
 > **Strings** are represented by keyword **`str`** in python
 * **Immutable*** as in `csharp` (i.e., once contructed could not modified)
 * string can be wrapped in **single quotes**(\') and **dboule quotes**(\")
@@ -54,9 +81,10 @@ Instead of **`"C:\\users\\kannan"`** you can mention **`r"C:\users\kannan"`**
 ![string is sequence of string](./images/string_sequence.JPG)
 * **Capitalize** method returns string with first letter capitalized.
 ![](./images/string_capitalize.JPG)
-## Bytes
+
+### Bytes
 TODO: Read
-## List
+### List
 > Sequence of objects
 * Enclosed in **square brackets**
 ```python
@@ -73,7 +101,7 @@ stringList.append("new name")
 stringList
 ["Kannan", "Raksith", "new name"]
 ```
-## Dicionary
+### Dicionary
 > Key value pair collection. Widely used collection type in Python
 sample literal dictionary.
 ```python
