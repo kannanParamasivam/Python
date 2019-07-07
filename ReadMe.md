@@ -56,34 +56,56 @@ t = ((1,2),(2,3),(3,4))
 * Nested tuple elements can be accessed uisng multi dimentional array style
 * **Single element** enclosed in parantheses is parsed as int not tuple. Single element tuple should have comma seperator before closing parantheses
 
-![](./images/tuple_single_element.JPG)
+    ![](./images/tuple_single_element.JPG)
 * **Parentheses are optional**
 
-![](./images/tuple_wo_paren.JPG)
+    ![](./images/tuple_wo_paren.JPG)
 * **Return more than one values** from function as tuple (ref. [tuple.py](./tuple.py))
 * Can **Unpack tuple** into refs variables (ref. [tuple.py](./tuple.py))
 * Can **Unpack nested tuple** into ref variables 
 
-![](./images/tuples_unpack_nested.JPG)
+    ![](./images/tuples_unpack_nested.JPG)
 * Ability of unpacking nested tuples idiomatic python operations like swap in Python
 
-![](./images/tuple_idiomatic_swap.JPG)
+    ![](./images/tuple_idiomatic_swap.JPG)
 * tuple can be **created from other collections** using tuple() constructor
 
-![](./images/tuple_from_other_collections.JPG)
-### str
+    ![](./images/tuple_from_other_collections.JPG)
+
+### str ([str_ops.py](./str_ops.py))
 > **Strings** are represented by keyword **`str`** in python
-* **Immutable*** as in `csharp` (i.e., once contructed could not modified)
+* **Immutable** as in `csharp` (i.e., once contructed could not modified)
 * string can be wrapped in **single quotes**(\') and **dboule quotes**(\")
 * Using one quoting style allows other quote as valid character in string.
 example **`'he said "true"'`*** or **`"he said 'true'"`**. This avoid escape characters.
-* Multiline string can be represented with three single quotes or three double quotes or escape characters
+* **Multiline** string can be represented with **three** single **quotes** or three double quotes or escape characters
 * To avid escape sequences can use **raw string** indiacator.
 Instead of **`"C:\\users\\kannan"`** you can mention **`r"C:\users\kannan"`**
-* String is the**sequence of characters but which are also string**.
-![string is sequence of string](./images/string_sequence.JPG)
+* String is the **sequence of characters but which are also string**.
+    
+    ![string is sequence of string](./images/string_sequence.JPG)
 * **Capitalize** method returns string with first letter capitalized.
-![](./images/string_capitalize.JPG)
+
+    ![](./images/string_capitalize.JPG)
+* **Concat** using ```+``` symbol
+* Larger strings can be concatenated using **join method**
+
+    ![](./images/str_join.JPG)
+
+* **split** using seperator
+
+    ![](./images/str_split.JPG)
+* Split with out seperator take ```" "``` as seperator
+    
+    ![](./images/str_split_wo_seperator.JPG)
+* **Partition** splits string into 3 pieces using seperator as part before seperator, seperator itself and part after seperator **as tuple**
+
+    ![](./images/str_partition.JPG)
+
+* **format**. Format internally considers variables list as tuple
+
+    ![](./images/str_format.JPG)
+### range
 
 ### Bytes
 TODO: Read

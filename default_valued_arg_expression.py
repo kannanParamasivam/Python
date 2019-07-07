@@ -21,5 +21,6 @@ def main():
         show_current_time_solution(ctime())
         sleep(1)
 
+
 if __name__ == "__main__":
     main()

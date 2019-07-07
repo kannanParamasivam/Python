@@ -1,3 +1,4 @@
+from util import print_banner
 
 
 def demo_tuple():
@@ -38,13 +39,6 @@ def print_nmth_element(t, n, m):
         print(t[n][m])
     else:
         print("Could not locate the leement")
-
-
-def print_banner(message, border_char="*"):
-    border = border_char*len(message)
-    print(border)
-    print(message)
-    print(border)
 
 
 def find_minmax(t):
