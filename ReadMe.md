@@ -106,11 +106,16 @@ Instead of **`"C:\\users\\kannan"`** you can mention **`r"C:\users\kannan"`**
 
     ![](./images/str_format.JPG)
 ### range
+> Generates **sequence of ints** from the specified **start** value untill the ***stop*** value. Stop value wont be included. **Step** can be sused to jump in the range.
+* **start** is optional. Default value is 0
+* **step** is optional. Default is 1
+* When using step, start is mandatory 
 
+    ![](./images/range.JPG)
 ### Bytes
 TODO: Read
 ### List
-> Sequence of objects
+> Sequence of objects. **Mutable**
 * Enclosed in **square brackets**
 ```python
 [1, 2, 3, 4, 5,6]
@@ -126,6 +131,32 @@ stringList.append("new name")
 stringList
 ["Kannan", "Raksith", "new name"]
 ```
+
+* Items can be accessed forward direction using 0 based **positive index**
+
+    ![](./images/list_by_index.JPG)
+
+* Items can be accessed reverse direction using **1 based negative idnex**
+
+    ![](./images/list_by_negative_index.JPG)
+
+* **Slicing** extracts part of the list. Includes element at start index and excludes element at stop index
+
+
+    ![](./images/list_slicing.JPG)
+* Slicing list without start and end index creates new copy of the original list
+
+    ![](./images/list_slicing_wo_start_end.JPG)
+* All three copy methods (list ctor, list.copy() and list[:]) does **shallow copy** not deep copy
+
+    ![](./images/list_shallow_copy.JPG)
+* ```list.index(item)``` gives index of the item in list
+* ```list.count(item)``` give number of occurances of item in the list
+* ```item in list``` checks if item present in the list
+* ```item not in list``` checks if item does not present in the list
+    
+    ![](./images/list_find_items.JPG)
+
 ### Dicionary
 > Key value pair collection. Widely used collection type in Python
 sample literal dictionary.
@@ -134,6 +165,14 @@ personDetails = {'name': 'Kannan', 'age': 33, 'city': 'Lake Bluff', 'state': 'Il
 personDetails['name']
 'Kannan'
 ```
+### Collection Enumeration
+* Any enumerable collection can be used directly in for loop
+
+    ![](./images/collection_iteration.JPG)
+
+* Any enumaerable collection can be enumerated using ```enumerate``` method. Returns **pair tuple** with index and value
+
+    ![](./images/collection_enumeration.JPG)
 ## Runtime Arguments
 >Runtime arguments can be accessed through sys.argv collection. sys.argv[0] is the file name of the module so, real runtime arguments will be starting from sys.argv[1]
 

@@ -38,7 +38,7 @@ def print_nmth_element(t, n, m):
     if t != None and len(t) > 0 and n < len(t) and m < len(t[n]):
         print(t[n][m])
     else:
-        print("Could not locate the leement")
+        print("Could not locate the element")
 
 
 def find_minmax(t):
