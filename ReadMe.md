@@ -176,6 +176,40 @@ stringList
     ![](./images/list_del_index.JPG)
 
 * ```remove(value)``` removes element by **value**
+
+    ![](./images/list_remove.jpg)
+
+* ```list.insert(index, new_item)``` insert new item in the index mentioned
+
+    ![](./images/list_insert.jpg)
+
+* All iterable series can be concatenated using `+` operand or `extend` method
+
+    ![](./images/list_concatenation.jpg)
+    ![](./images/list_extend.jpg)
+
+* `reverse` reverse the list **in-place**
+
+    ![](./images/list_reverse_inplace.jpg)
+
+* `sort` sorts list **in-place**
+
+    ![](./images/list_sort_inplace.jpg)
+
+    `reverse = True` option sorts in desc order
+
+    ![](./images/list_sort_desc.jpg)
+
+    ![](./images/list_sort_with_key_and_desc.jpg)
+
+* `reversed` creates reversed **copy** of original list. Result as iterator
+
+    ![](./images/list_reversed.jpg)
+
+* `sorted` creates sorted copy or original list
+
+    ![](./images/list_sorted.jpg)
+
 ### Dicionary
 > Key value pair collection. Widely used collection type in Python
 sample literal dictionary.
