@@ -71,6 +71,12 @@ t = ((1,2),(2,3),(3,4))
 * tuple can be **created from other collections** using tuple() constructor
 
     ![](./images/tuple_from_other_collections.JPG)
+* Tuple elements can be **accessed by index**
+
+    ![](./images/tuple_by_index.JPG)
+* Tuple elements can be accessed using **negative 1 based index** in **reverse**
+
+    ![](./images/tuple_by_negative_index.JPG)
 
 ### str ([str_ops.py](./str_ops.py))
 > **Strings** are represented by keyword **`str`** in python
@@ -150,6 +156,12 @@ stringList
 * All three copy methods (list ctor, list.copy() and list[:]) does **shallow copy** not deep copy
 
     ![](./images/list_shallow_copy.JPG)
+* Multiplying list by number will ***repeat*** the list item given number of times
+
+    ![](./images/list_repitation.JPG)
+* List **repeat** does **shallow copying** of referenced objects
+
+    ![](./images/list_repitation_shallow_copy.JPG)
 * ```list.index(item)``` gives index of the item in list
 * ```list.count(item)``` give number of occurances of item in the list
 * ```item in list``` checks if item present in the list
@@ -157,6 +169,13 @@ stringList
     
     ![](./images/list_find_items.JPG)
 
+* ```del list[index]``` removes element by **index**
+
+    ![](./images/list_del.JPG)
+
+    ![](./images/list_del_index.JPG)
+
+* ```remove(value)``` removes element by **value**
 ### Dicionary
 > Key value pair collection. Widely used collection type in Python
 sample literal dictionary.
@@ -173,6 +192,7 @@ personDetails['name']
 * Any enumaerable collection can be enumerated using ```enumerate``` method. Returns **pair tuple** with index and value
 
     ![](./images/collection_enumeration.JPG)
+
 ## Runtime Arguments
 >Runtime arguments can be accessed through sys.argv collection. sys.argv[0] is the file name of the module so, real runtime arguments will be starting from sys.argv[1]
 
@@ -215,3 +235,7 @@ value matches
 ## Explore Type and Attributes of object
 >```type(<object name>)``` shows type of the object
 >```dir(<object name>)``` shows attributes of the object
+## Unused waring suppression
+> unused variable waring can be suppressed by assigning vale to `_` variable
+
+![](./images/suppress_unused_warning.JPG)
