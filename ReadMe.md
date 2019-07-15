@@ -273,3 +273,20 @@ value matches
 > unused variable waring can be suppressed by assigning vale to `_` variable
 
 ![](./images/suppress_unused_warning.JPG)
+## Floor Division
+> `5/2` gives `2.5` but floor division floors down the result where `5//2` results in `2`
+## Unit Testing [sample unit testing module](./test_try_unit_test.py)
+> `unittest` module is **inbuilt** in python.
+* **Run test** module by passing it to `unittest` module as parameter
+
+    `python -m unittest test_unit_test_module.py`
+    
+* Also can run unit test moudle directly if module has following logic
+
+    ```python
+    if __name__ == "__main__":
+    unittest.main()
+    ```
+* Sample also shows how to **assert exceptions**
+## Questions
+* Pycache folder?
