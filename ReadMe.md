@@ -218,6 +218,7 @@ personDetails = {'name': 'Kannan', 'age': 33, 'city': 'Lake Bluff', 'state': 'Il
 personDetails['name']
 'Kannan'
 ```
+* Unordered collection (should not depend on order of items in dictionary)
 ### Collection Enumeration
 * Any enumerable collection can be used directly in for loop
 
@@ -290,3 +291,4 @@ value matches
 * Sample also shows how to **assert exceptions**
 ## Questions
 * Pycache folder?
+## Exception Handling
