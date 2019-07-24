@@ -45,7 +45,7 @@ while ctr
 > **Immutable** collection
 * Enclosed in **parantheses**
 * Can store **any type** of object 
-```python
+```python3
 t = ("Chicago", 2.3, 3)
 ```
 * Can be **nested**
@@ -291,4 +291,32 @@ value matches
 * Sample also shows how to **assert exceptions**
 ## Questions
 * Pycache folder?
-## Exception Handling
+## Exception Handling [exception handling](./exception_handling.py)
+> `try` and `except` blocks
+* `try` block contains code that could **reaise exception** 
+* `except` block contains code that **handles exception**
+* Seperate except for different **kinds of exceptions**
+
+    ![](./images/exception_except_more_than_one.jpg)
+* Handling of multiple exceptions can be combined using **tuple of exception types**
+    
+    ![](./images/exception_except_more_than_one_tuple.jpg)
+* Just **Swallow** exception (Do nothing)
+
+    ![](./images/exception_swallow.jpg)
+* **Capture** exception object
+
+    ![](./images/exception_capture_exception_object.jpg)
+* **Re-raise** the exception
+
+    ![](./images/exception_reraise.jpg)
+
+* Detect the changce of exception early on and raise it
+
+    ![](./images/exception_early_detection.jpg)
+* **finally** block will be executed irrespective of exception occurance. Cleanup activities can be done here.
+
+    ![](./images/exception_finally.jpg)
+## Check Type
+
+![](./images/type_check.jpg)
