@@ -317,6 +317,29 @@ value matches
 * **finally** block will be executed irrespective of exception occurance. Cleanup activities can be done here.
 
     ![](./images/exception_finally.jpg)
-## Check Type
+## Type of instance
+> Check if an instance is of a type
+```python
+isinstance(<object>, <type>)
+```
 
 ![](./images/type_check.jpg)
+## Iterables
+>Techniques on Iterations and Collections
+### List / Dictionary / set Comprehensions
+* **Create new list, dictionary or set** by iterating list without and with conditions
+* Comprehension can be used to create **any collection type from any collection** type
+
+    ![](./images/list_comprehension_list_copy.jpg)
+
+    ![](./images/list_comprehension_tuple.jpg)
+    
+    ![](./images/list_comprehension_dict.jpg)
+
+    ![](./images/list_comprehension_set.jpg)
+
+    ![](./images/dict_comprehension_dict.jpg)
+    
+* **Predicate filtering** can be used to create new collection
+
+    ![](./images/list_comprehension_filtering_predicate.jpg)
