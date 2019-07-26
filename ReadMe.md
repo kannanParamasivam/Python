@@ -339,7 +339,13 @@ isinstance(<object>, <type>)
     ![](./images/list_comprehension_set.jpg)
 
     ![](./images/dict_comprehension_dict.jpg)
-    
+
 * **Predicate filtering** can be used to create new collection
 
     ![](./images/list_comprehension_filtering_predicate.jpg)
+## Iterator
+> All `iterable` collections (list, dictionary, set) can be passed to inbuilt `iter` function to get `iterator`. Passing iterator to the inbuilt function `next` will get the next element in the iterator.
+
+![](./images/iterator.jpg)
+
+>`for` loop and collection comprehensions are highlevel implementations of iterators
