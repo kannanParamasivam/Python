@@ -349,3 +349,6 @@ isinstance(<object>, <type>)
 ![](./images/iterator.jpg)
 
 >`for` loop and collection comprehensions are highlevel implementations of iterators
+
+## Generator ([generator.py](./generator.py))
+> Lazily executed iterators. Userful for steaming and pipeling. Can handle non ending streaming
