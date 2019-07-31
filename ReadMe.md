@@ -361,3 +361,6 @@ isinstance(<object>, <type>)
 * Generator can be created as **comprehension**. Predicates with if can be included as other comprehensions
 
     ![](./images/generator_comprehension.jpg)
+
+## all & any [all_and_any.py](all_and_any.py)
+> Evaluates if all or any of the item is true. Accepts **iterable, iterator and generator** as parameter
