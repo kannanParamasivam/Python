@@ -352,3 +352,12 @@ isinstance(<object>, <type>)
 
 ## Generator ([generator.py](./generator.py))
 > Lazily executed iterators. Userful for steaming and pipeling. Can handle non ending streaming
+* Generator peocess **resumes when next** value is requested
+
+    ![](./images/generator.jpg)
+* function returns generator when it have **atleast one `yield`** statment
+* Generators are **single use** objects
+* Each time we call generator function will create new generator
+* Generator can be created as **comprehension**. Predicates with if can be included as other comprehensions
+
+    ![](./images/generator_comprehension.jpg)
