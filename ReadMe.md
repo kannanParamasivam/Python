@@ -364,3 +364,25 @@ isinstance(<object>, <type>)
 
 ## all & any [all_and_any.py](all_and_any.py)
 > Evaluates if all or any of the item is true. Accepts **iterable, iterator and generator** as parameter
+
+## Object Oriented Programming
+* Empty class
+    ```python
+    class Employee:
+    pass
+
+    emp1 = Employee()
+    emp1.name = 'kannan'
+    print(emp1.name)
+    ```
+* Class with **Contstructor**
+    ```python
+    class Employee:
+    def __init__(self):
+        print('this is ctor')
+
+
+    emp1 = Employee()
+    emp1.name = 'kannan'
+    print(emp1.name)
+    ```
