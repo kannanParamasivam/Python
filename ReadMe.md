@@ -365,7 +365,7 @@ isinstance(<object>, <type>)
 ## all & any [all_and_any.py](all_and_any.py)
 > Evaluates if all or any of the item is true. Accepts **iterable, iterator and generator** as parameter
 
-## Object Oriented Programming
+## Object Oriented Programming (Sample is in folder object_oriented)
 * Empty class
     ```python
     class Employee:
@@ -386,3 +386,6 @@ isinstance(<object>, <type>)
     emp1.name = 'kannan'
     print(emp1.name)
     ```
+* **Instance variables** - Specific to instance of the class
+* **Class vairables** - like static variables. Class level. 
+* For any instance variable reference, python will look for **variable with name in instance level and if it is not it will search in class level**
