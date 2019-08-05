@@ -1,4 +1,6 @@
 from pprint import pprint
+import datetime
+from sys import path
 
 
 class Employee:
@@ -16,11 +18,29 @@ class Employee:
         self.pay = pay
         Employee.number_of_employees += 1
 
+    # Instance method
     def getfullname(self):
         return "{fn} {ln}".format(fn=self.firstName, ln=self.lastName)
 
+    # Instance method
     def apply_raise(self):
         self.pay = self.pay * self.raise_amount
+
+    # Class method which acts as custom constructor
+    @classmethod
+    def create_employee(cls, emp_details):
+        if emp_details != None and len(emp_details.strip()) > 0:
+            ls_emp_details = emp_details.split('_')
+            if ls_emp_details != None and len(ls_emp_details) == 6:
+                fn, ln, age, phone, city, pay = ls_emp_details
+                return cls(fn, ln, age, phone, city, pay)
+        return None
+
+    # Static method which does not take instance or class as default argument
+    @staticmethod
+    def is_working_day(date):
+        return date.weekday() <= 4
+
 
 emp1 = Employee('Kannan', 'Paramasivam', 32, '224-280-2046', 'Chicago', 50000)
 print('Number of employees (emp1) : {}'.format(emp1.number_of_employees))
@@ -62,3 +82,12 @@ pprint(emp2.__dict__)
 print('Number of employees: {}'.format(Employee.number_of_employees))
 print('Number of employees (emp1) : {}'.format(emp1.number_of_employees))
 print('Number of employees (emp2) : {}'.format(emp2.number_of_employees))
+
+# Creating object using custom cnstructor by class method
+emp3 = Employee.create_employee(
+    'kannan_paramasivam_33_224-280-2046_LakeBluff_50000')
+pprint(emp3.__dict__)
+
+# Invoking static method
+print('Today is {}'.format('week day' if Employee.is_working_day(datetime.date.today()) else 'week end'))
+print(help(Employee))

@@ -386,6 +386,12 @@ isinstance(<object>, <type>)
     emp1.name = 'kannan'
     print(emp1.name)
     ```
+### Types of variables
 * **Instance variables** - Specific to instance of the class
 * **Class vairables** - like static variables. Class level. 
 * For any instance variable reference, python will look for **variable with name in instance level and if it is not it will search in class level**
+### Types of methods
+* **Instance** methods which takes instance of the current class `self` as first and default parameter
+* **Class** method which is not specific for instance and takes current class as the `cls` as first and default parameter
+* **Static** method which is not specific for instance. It does not take neither instance nor class ass its parameter. It does not access any of the class memebers i.e., we could not access class and instance specific member of the class
+### Inheritence
