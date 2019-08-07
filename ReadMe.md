@@ -40,6 +40,20 @@ while ctr
     print(ctr)
     ctr -= 1
 ```
+## Mutables and Immutables
+
+Type|Immutable
+----|----
+bool|Y
+int|Y
+float|Y
+str|Y
+tuple|Y
+frozenset|Y
+list|N
+set|N
+dictionary|N
+
 ## Collections
 ### Tuples
 > **Immutable** collection
