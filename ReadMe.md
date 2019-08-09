@@ -409,3 +409,6 @@ isinstance(<object>, <type>)
 * **Class** method which is not specific for instance and takes current class as the `cls` as first and default parameter
 * **Static** method which is not specific for instance. It does not take neither instance nor class ass its parameter. It does not access any of the class memebers i.e., we could not access class and instance specific member of the class
 ### Inheritence
+### Dunder methods
+> Dunder methods are special kind of methods which will be called on special operations like converting to string, representing an object.
+> Dunder methods are used internally for mathematical operations. Operator overloading can be done through overloading corresponding dunder methods
