@@ -17,6 +17,9 @@ class Employee:
         self.city = city
         self.pay = pay
         Employee.number_of_employees += 1
+    
+    def __del__(self):
+        Employee.number_of_employees -= 1
 
     # Instance method
     def getfullname(self):
@@ -41,53 +44,39 @@ class Employee:
     def is_working_day(date):
         return date.weekday() <= 4
 
+# # Show instance members
+# pprint(emp1.__dict__)
+# pprint(emp2.__dict__)
 
-emp1 = Employee('Kannan', 'Paramasivam', 32, '224-280-2046', 'Chicago', 50000)
-print('Number of employees (emp1) : {}'.format(emp1.number_of_employees))
+# # Show Class members
+# pprint(Employee.__dict__)
 
-print('First Name: {fn} \nLast Name: {ln}'.format(
-    fn=emp1.firstName, ln=emp1.lastName))
+# # Access class member through instance
+# print('emp1 raise: {0}\nemp2 raise: {1}'.format(
+#     emp1.raise_amount, emp2.raise_amount))
 
-# Two ways of calling instance specific methods
-print('Full Name: {}'.format(emp1.getfullname()))
-print('Full Name: {}'.format(Employee.getfullname(emp1)))
+# # Use class member in instance method
+# emp1.apply_raise()
+# pprint(emp1.__dict__)
+# pprint(emp2.__dict__)
 
-emp2 = Employee('James', 'Baker', 46, '254-345-7346', 'Tampa', 60000)
-print('Number of employees (emp2) : {}'.format(emp2.number_of_employees))
+# # override class memeber by instance member
+# emp1.raise_amount = 1.10
+# emp1.apply_raise()
+# # Notice raise_amout is included in the isnstance memeber but not to emp2
+# pprint(emp1.__dict__)
+# pprint(emp2.__dict__)
 
-# Show instance members
-pprint(emp1.__dict__)
-pprint(emp2.__dict__)
+# # Class member is used to track number of instances (singleton)
+# print('Number of employees: {}'.format(Employee.number_of_employees))
+# print('Number of employees (emp1) : {}'.format(emp1.number_of_employees))
+# print('Number of employees (emp2) : {}'.format(emp2.number_of_employees))
 
-# Show Class members
-pprint(Employee.__dict__)
+# # Creating object using custom cnstructor by class method
+# emp3 = Employee.create_employee(
+#     'kannan_paramasivam_33_224-280-2046_LakeBluff_50000')
+# pprint(emp3.__dict__)
 
-# Access class member through instance
-print('emp1 raise: {0}\nemp2 raise: {1}'.format(
-    emp1.raise_amount, emp2.raise_amount))
-
-# Use class member in instance method
-emp1.apply_raise()
-pprint(emp1.__dict__)
-pprint(emp2.__dict__)
-
-# override class memeber by instance member
-emp1.raise_amount = 1.10
-emp1.apply_raise()
-# Notice raise_amout is included in the isnstance memeber but not to emp2
-pprint(emp1.__dict__)
-pprint(emp2.__dict__)
-
-# Class member is used to track number of instances (singleton)
-print('Number of employees: {}'.format(Employee.number_of_employees))
-print('Number of employees (emp1) : {}'.format(emp1.number_of_employees))
-print('Number of employees (emp2) : {}'.format(emp2.number_of_employees))
-
-# Creating object using custom cnstructor by class method
-emp3 = Employee.create_employee(
-    'kannan_paramasivam_33_224-280-2046_LakeBluff_50000')
-pprint(emp3.__dict__)
-
-# Invoking static method
-print('Today is {}'.format('week day' if Employee.is_working_day(datetime.date.today()) else 'week end'))
-print(help(Employee))
+# # Invoking static method
+# print('Today is {}'.format('week day' if Employee.is_working_day(datetime.date.today()) else 'week end'))
+# print(help(Employee))
