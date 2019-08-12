@@ -1,6 +1,6 @@
 from pprint import pprint
 import datetime
-from sys import path
+import requests
 
 
 class Employee:
@@ -43,6 +43,13 @@ class Employee:
     @staticmethod
     def is_working_day(date):
         return date.weekday() <= 4
+
+    def monthly_schedule(self, month):
+        response = requests.get(f'http://company.com/{self.lastName}/{month}')
+        if response.ok:
+            return response.text
+        else:
+            return 'Bad Response'
 
 # # Show instance members
 # pprint(emp1.__dict__)

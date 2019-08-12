@@ -1,5 +1,6 @@
 import unittest
 from employee import Employee
+from unittest.mock import patch
 
 
 class TestEmployee(unittest.TestCase):
@@ -23,7 +24,7 @@ class TestEmployee(unittest.TestCase):
         print('\ntearDown\n')
         if hasattr(self, 'emp1'):
             del self.emp1
-        if hasattr(self, 'emp2'):    
+        if hasattr(self, 'emp2'):
             del self.emp2
         if hasattr(self, 'emp3'):
             del self.emp3
@@ -45,9 +46,16 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(self.emp1.raise_amount, 1.06)
         self.assertEqual(Employee.raise_amount, 1.05)
 
+    def test_monthly_schedule(self):
+        """mock external call"""
+        with patch('employee.requests.get') as mocked_get:
+            mocked_get.return_value.ok = True
+            mocked_get.return_value.text = 'Success'
 
-# emp1 = Employee('kannan', 'sivam', 33, '224-280-2046', 'Chicago', 50000)
-# print(emp1.__dict__)
+            schedule = self.emp1.monthly_schedule('Jan')
+            mocked_get.assert_called_with('http://company.com/sivam/Jan')
+            self.assertEqual(schedule, 'Success')
+
 
 if __name__ == '__main__':
     unittest.main()
