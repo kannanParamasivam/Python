@@ -6,6 +6,9 @@
 >Python is developed by following set of proposals
 * **PEP-8** for Style guide for Python
 * **PEP-20** is called Zen of Python which provided best practices for Python
+## Install packages
+>pip is package manager for python which has managed packages
+* install package on Windows cmd `>python -m pip install <package name>`
 
 ## Zen of Python
 * ### Flat is better than nested
@@ -412,3 +415,4 @@ isinstance(<object>, <type>)
 ### Dunder methods
 > Dunder methods are special kind of methods which will be called on special operations like converting to string, representing an object.
 > Dunder methods are used internally for mathematical operations. Operator overloading can be done through overloading corresponding dunder methods
+## Test - mock external dependency ([test_employee.py](./object_oriented/test_employee.py))
