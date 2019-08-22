@@ -16,9 +16,14 @@ class Employee:
         print('representation of object')
         return 'repr {0} {1}'.format(self._fn, self._ln)
 
+    def __add__(self, other):
+        return self._pay + other._pay
 
 emp = Employee('Kannan', 'Sivam', 50000)
 print(emp.get_fullname())
 print(emp)
 print(str(emp))
 print(repr(emp))
+
+emp1 = Employee('Kan', 'Para', 30000)
+print(emp+emp1)
