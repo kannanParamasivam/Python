@@ -6,6 +6,9 @@
 >Python is developed by following set of proposals
 * **PEP-8** for Style guide for Python
 * **PEP-20** is called Zen of Python which provided best practices for Python
+## Install packages
+>pip is package manager for python which has managed packages
+* install package on Windows cmd `>python -m pip install <package name>`
 
 ## Zen of Python
 * ### Flat is better than nested
@@ -40,6 +43,20 @@ while ctr
     print(ctr)
     ctr -= 1
 ```
+## Mutables and Immutables
+
+Type|Immutable
+----|----
+bool|Y
+int|Y
+float|Y
+str|Y
+tuple|Y
+frozenset|Y
+list|N
+set|N
+dictionary|N
+
 ## Collections
 ### Tuples
 > **Immutable** collection
@@ -365,7 +382,7 @@ isinstance(<object>, <type>)
 ## all & any [all_and_any.py](all_and_any.py)
 > Evaluates if all or any of the item is true. Accepts **iterable, iterator and generator** as parameter
 
-## Object Oriented Programming
+## Object Oriented Programming (Sample is in folder object_oriented)
 * Empty class
     ```python
     class Employee:
@@ -386,3 +403,16 @@ isinstance(<object>, <type>)
     emp1.name = 'kannan'
     print(emp1.name)
     ```
+### Types of variables
+* **Instance variables** - Specific to instance of the class
+* **Class vairables** - like static variables. Class level. 
+* For any instance variable reference, python will look for **variable with name in instance level and if it is not it will search in class level**
+### Types of methods
+* **Instance** methods which takes instance of the current class `self` as first and default parameter
+* **Class** method which is not specific for instance and takes current class as the `cls` as first and default parameter
+* **Static** method which is not specific for instance. It does not take neither instance nor class ass its parameter. It does not access any of the class memebers i.e., we could not access class and instance specific member of the class
+### Inheritence
+### Dunder methods
+> Dunder methods are special kind of methods which will be called on special operations like converting to string, representing an object.
+> Dunder methods are used internally for mathematical operations. Operator overloading can be done through overloading corresponding dunder methods
+## Test - mock external dependency ([test_employee.py](./object_oriented/test_employee.py))
